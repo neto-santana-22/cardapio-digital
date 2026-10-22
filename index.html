@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141210">
+  <meta name="description" content="Confira o cardápio digital do restaurante O Praeiro.">
+  <title>Cardápio | O Praeiro Restaurante</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="cardapio.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <div class="sol" aria-hidden="true">
+      <svg viewBox="0 0 120 70" width="120" height="70" focusable="false">
+        <path d="M10 52a50 50 0 0 1 100 0z" fill="#f2b705" />
+        <path d="M22 52a38 38 0 0 1 76 0z" fill="#e8742a" />
+        <rect x="6" y="54" width="108" height="3" rx="1.5" fill="#3b8fd1" />
+        <rect x="18" y="60" width="84" height="3" rx="1.5" fill="#3b8fd1" opacity=".7" />
+        <path d="M84 52V22" stroke="#f4efe6" stroke-width="3" stroke-linecap="round" />
+        <path d="M84 22c-10-2-16 4-18 10 6-4 12-5 18-3zm0 0c10-2 16 4 18 10-6-4-12-5-18-3z" fill="#f4efe6" />
+      </svg>
+    </div>
+    <h1 class="marca" id="nomeRestaurante">O Praeiro</h1>
+    <p class="sub" id="subtitulo">RESTAURANTE</p>
+    <p class="titulo-script">Nosso Cardápio</p>
+    <p class="boas-vindas" id="boasVindas"></p>
+  </header>
+
+  <nav class="abas" aria-label="Categorias do cardápio">
+    <div class="abas-lista" id="abas" role="tablist" aria-label="Filtrar por categoria"></div>
+  </nav>
+
+  <main id="cardapio" aria-live="polite" aria-busy="false"></main>
+
+  <section class="acoes" aria-label="Ações do cardápio">
+    <a id="btnContato" class="botao" hidden target="_blank" rel="noopener noreferrer">Falar com o restaurante</a>
+  </section>
+
+  <footer class="rodape">
+    <p id="frase"></p>
+    <p id="endereco" class="pequeno" hidden></p>
+    <p id="horario" class="pequeno" hidden></p>
+    <p class="bemvindo">Seja bem-vindo!</p>
+  </footer>
+
+</body>
+</html>
