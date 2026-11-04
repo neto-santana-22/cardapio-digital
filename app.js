@@ -63,6 +63,15 @@
     secao.id = `cat-${categoria.id}`;
     secao.setAttribute("aria-labelledby", tituloId);
 
+    if (categoria.imagem) {
+      const img = criarElemento("img", "categoria-img");
+      img.src = categoria.imagem;
+      img.alt = "";
+      img.loading = "lazy";
+      img.decoding = "async";
+      secao.appendChild(img);
+    }
+
     const titulo = criarElemento("h2", "categoria-titulo", categoria.nome);
     titulo.id = tituloId;
     secao.appendChild(titulo);

@@ -3,31 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#141210">
+  <meta name="theme-color" content="#0a0705">
   <meta name="description" content="Confira o cardápio digital do restaurante O Praeiro.">
   <title>Cardápio | O Praeiro Restaurante</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Roboto:wght@400;500;700&family=Yellowtail&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="cardapio.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
   <header class="topo">
-    <div class="sol" aria-hidden="true">
-      <svg viewBox="0 0 120 70" width="120" height="70" focusable="false">
-        <path d="M10 52a50 50 0 0 1 100 0z" fill="#f2b705" />
-        <path d="M22 52a38 38 0 0 1 76 0z" fill="#e8742a" />
-        <rect x="6" y="54" width="108" height="3" rx="1.5" fill="#3b8fd1" />
-        <rect x="18" y="60" width="84" height="3" rx="1.5" fill="#3b8fd1" opacity=".7" />
-        <path d="M84 52V22" stroke="#f4efe6" stroke-width="3" stroke-linecap="round" />
-        <path d="M84 22c-10-2-16 4-18 10 6-4 12-5 18-3zm0 0c10-2 16 4 18 10-6-4-12-5-18-3z" fill="#f4efe6" />
-      </svg>
+    <img class="deco sol-img" src="img/sol.jpg" alt="" aria-hidden="true">
+    <img class="deco palma-esq" src="img/palma-esq.jpg" alt="" aria-hidden="true">
+    <div class="logo">
+      <img class="emblema" src="img/logo.jpg" alt="" aria-hidden="true">
+      <div>
+        <h1 class="marca" id="nomeRestaurante">O Praeiro</h1>
+        <p class="sub" id="subtitulo">RESTAURANTE</p>
+      </div>
     </div>
-    <h1 class="marca" id="nomeRestaurante">O Praeiro</h1>
-    <p class="sub" id="subtitulo">RESTAURANTE</p>
-    <p class="titulo-script">Nosso Cardápio</p>
+    <p class="titulo-script"><span>Nosso Cardápio</span></p>
     <p class="boas-vindas" id="boasVindas"></p>
   </header>
 
@@ -42,11 +39,12 @@
   </section>
 
   <footer class="rodape">
+    <img class="deco palma-be" src="img/palma-be.jpg" alt="" aria-hidden="true">
+    <img class="deco palma-bd" src="img/palma-bd.jpg" alt="" aria-hidden="true">
     <p id="frase"></p>
     <p id="endereco" class="pequeno" hidden></p>
     <p id="horario" class="pequeno" hidden></p>
-    <p class="bemvindo">Seja bem-vindo!</p>
+    <p class="bemvindo"><span>Seja bem-vindo!</span></p>
   </footer>
-
 </body>
 </html>

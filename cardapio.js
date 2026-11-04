@@ -22,6 +22,7 @@ const CONFIG = {
 const CATEGORIAS = [
   {
     id: "alacarte",
+    imagem: "img/alacarte.jpg",
     nome: "Pratos à la carte",
     itens: [
       { nome: "Arrumadinho de charque", preco: 28 },
@@ -48,6 +49,7 @@ const CATEGORIAS = [
   },
   {
     id: "compartilhar",
+    imagem: "img/compartilhar.jpg",
     nome: "Pratos pra compartilhar",
     itens: [
       { nome: "Peixada", obs: "serve 2 pessoas", preco: 100 },
@@ -59,7 +61,8 @@ const CATEGORIAS = [
   },
   {
     id: "porcoes",
-    nome: "Porções e petiscos",
+    imagem: "img/porcoes.jpg",
+    nome: "Porção e Petiscos",
     itens: [
       { nome: "Caldinho", preco: 10 },
       { nome: "Batata frita", preco: 25 },
@@ -70,6 +73,7 @@ const CATEGORIAS = [
   },
   {
     id: "bebidas",
+    imagem: "img/bebidas.jpg",
     nome: "Bebidas",
     itens: [
       { nome: "Suco", obs: "copo", preco: 7 },
