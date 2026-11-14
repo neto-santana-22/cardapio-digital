@@ -35,6 +35,7 @@
 
     if (item.obs) nome.appendChild(criarElemento("span", "obs", `(${item.obs})`));
     li.appendChild(nome);
+    if (item.semPreco) return li;
     li.appendChild(criarElemento("span", "pontos"));
 
     let textoPreco;
@@ -47,7 +48,7 @@
       textoPreco = "Preço a consultar";
       classePreco += " consultar";
     } else if (typeof item.preco === "number" && Number.isFinite(item.preco) && item.preco >= 0) {
-      textoPreco = moedaBRL.format(item.preco);
+      textoPreco = (item.aPartirDe ? "a partir de " : "") + moedaBRL.format(item.preco);
     } else {
       textoPreco = "Preço não informado";
       classePreco += " consultar";
@@ -72,13 +73,19 @@
       secao.appendChild(img);
     }
 
+    if (!categoria.imagem) secao.classList.add("sem-img");
+
     const titulo = criarElemento("h2", "categoria-titulo", categoria.nome);
     titulo.id = tituloId;
     secao.appendChild(titulo);
 
+    if (categoria.notaTopo) secao.appendChild(criarElemento("p", "nota", categoria.notaTopo));
+
     const lista = criarElemento("ul", "lista");
     categoria.itens.forEach((item) => lista.appendChild(criarItem(item)));
     secao.appendChild(lista);
+
+    if (categoria.nota) secao.appendChild(criarElemento("p", "nota nota-final", categoria.nota));
     return secao;
   }
 
