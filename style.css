@@ -168,6 +168,9 @@ main { max-width: var(--largura-conteudo); min-height: 30vh; margin: 0 auto; pad
 .pontos { flex: 1 1 auto; min-width: 8px; border-bottom: 1.5px dotted #6d5b3f; transform: translateY(-4px); }
 .preco { flex: 0 0 auto; color: #fff1cf; font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .preco.consultar { max-width: 46%; color: var(--texto-suave); font-size: .82rem; font-weight: 500; text-align: right; white-space: normal; }
+.categoria.sem-img .lista { max-width: 100%; }
+.nota { position: relative; margin: 2px 0 6px; padding: 0 16px; color: var(--texto-suave); font-size: .9rem; }
+.nota-final { margin: 8px 0 0; color: #fff1cf; font-weight: 700; }
 .item.indisponivel .nome { color: var(--texto-suave); text-decoration: line-through; }
 .item.indisponivel .preco { color: var(--texto-suave); font-size: .85rem; }
 
