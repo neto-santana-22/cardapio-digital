@@ -4,6 +4,9 @@
  * preco: valor numérico em reais ou null para exibir "Preço a consultar".
  * disponivel: use false para marcar um item como indisponível.
  * obs: observação opcional, como "serve 2 pessoas".
+ * aPartirDe: true mostra "a partir de" antes do preço.
+ * semPreco: true mostra só o nome do item (sem pontilhado nem preço).
+ * notaTopo / nota: texto opcional abaixo do título / no fim da seção.
  * Confirme todos os preços com o restaurante antes de publicar.
  */
 
@@ -68,7 +71,46 @@ const CATEGORIAS = [
       { nome: "Batata frita", preco: 25 },
       { nome: "Calabresa com fritas", preco: 35 },
       { nome: "Camarão alho e óleo", preco: 50 },
-      { nome: "Carne de sol com fritas", preco: 60 }
+      { nome: "Carne de sol com fritas", preco: 60 },
+      { nome: "Camarão crocante", preco: 70 },
+      { nome: "Posta de peixe", aPartirDe: true, preco: 80 },
+      { nome: "Caldão", preco: 20 },
+      { nome: "Mistão de crustáceos", obs: "posta de peixe, batata, salada, camarão", preco: 120 }
+    ]
+  },
+  {
+    id: "jantas",
+    imagem: "img/jantas.jpg",
+    nome: "Jantas",
+    itens: [
+      { nome: "Batata doce", preco: 25 },
+      { nome: "Macaxeira", preco: 25 },
+      { nome: "Cará", preco: 25 },
+      { nome: "Sopas", preco: 20 },
+      { nome: "Ovo", preco: 20 },
+      { nome: "Calabresa", preco: 20 },
+      { nome: "Guisado de boi", preco: 25 },
+      { nome: "Galinha guisada", preco: 25 },
+      { nome: "Fígado", preco: 25 },
+      { nome: "Bisteca suína", preco: 25 },
+      { nome: "Peixe frito", preco: 25 },
+      { nome: "Carne de sol", preco: 30 },
+      { nome: "Charque", preco: 30 },
+      { nome: "Pão com ovo", preco: 8 },
+      { nome: "Pão com queijo", preco: 10 }
+    ],
+    nota: "Consulte nossas opções do dia!"
+  },
+  {
+    id: "sobremesas",
+    imagem: "img/sobremesas.jpg",
+    nome: "Sobremesas",
+    itens: [
+      { nome: "Fatia de bolo de noiva", preco: 20 },
+      { nome: "Fatia de bolo de rolo massaricado com queijo do reino", preco: 15 },
+      { nome: "Pudim", preco: 10 },
+      { nome: "Delícia de abacaxi", preco: 12 },
+      { nome: "Pavê", preco: 12 }
     ]
   },
   {
